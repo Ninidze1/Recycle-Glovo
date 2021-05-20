@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NewRecView</string>
+    <string name="items_in_cart">Items in Cart:  </string>
+    <string name="_0">0</string>
+</resources>
