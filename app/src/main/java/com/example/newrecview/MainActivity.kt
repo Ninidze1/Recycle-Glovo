@@ -1,8 +1,6 @@
 package com.example.newrecview
 
-import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
@@ -12,7 +10,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var adapter: ItemAdapter
-    private var items = mutableListOf<ItemModelFirst>()
+    private var items = mutableListOf<ItemModel>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,7 +32,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun itemClickListener(position: Int) {
-                items[position] = ItemModelFirst(
+                items[position] = ItemModel(
                     "Added to Cart",
                     "https://thumbs.dreamstime.com/b/add-to-cart-icon-adding-shopping-cart-well-organized-fully-editable-add-to-cart-icon-adding-shopping-cart-any-use-like-167547952.jpg"
                 )
@@ -60,95 +58,95 @@ class MainActivity : AppCompatActivity() {
 
     private fun setData() {
         items.add(
-            ItemModelFirst(
+            ItemModel(
                 "Domino's Pizza",
                 "https://res.cloudinary.com/glovoapp/w_1200,f_auto,q_auto/Stores/sp9inq8ksknquvv4lbtd"
             )
         )
         items.add(
-            ItemModelFirst(
+            ItemModel(
                 "Chicken McD",
                 "https://res.cloudinary.com/glovoapp/w_1200,f_auto,q_auto/Stores/spsqbigvtg8yfk1yilmg"
             )
         )
         items.add(
-            ItemModelFirst(
+            ItemModel(
                 "Wendy's",
                 "https://res.cloudinary.com/glovoapp/w_1200,f_auto,q_auto/Stores/xhhwxxrhel4d2iollfao"
             )
         )
-        items.add(ItemModelFirst("Pho"))
+        items.add(ItemModel("Pho"))
         items.add(
-            ItemModelFirst(
+            ItemModel(
                 "Dunkin'",
                 "https://res.cloudinary.com/glovoapp/w_1200,f_auto,q_auto/Stores/cbookusq05v1ye3txzox"
             )
         )
         items.add(
-            ItemModelFirst(
+            ItemModel(
                 "Wendy's",
                 "https://res.cloudinary.com/glovoapp/w_1200,f_auto,q_auto/Stores/tzs3hir4fwqewftyyese"
             )
         )
-        items.add(ItemModelFirst("McCafé"))
+        items.add(ItemModel("McCafé"))
         items.add(
-            ItemModelFirst(
+            ItemModel(
                 "Subway",
                 "https://res.cloudinary.com/glovoapp/w_1200,f_auto,q_auto/Stores/tzs3hir4fwqewftyyese"
             )
         )
         items.add(
-            ItemModelFirst(
+            ItemModel(
                 "Tokyo Sushi",
                 "https://res.cloudinary.com/glovoapp/w_1200,f_auto,q_auto/Stores/s2mgiopebvrzojzuuzqx"
             )
         )
-        items.add(ItemModelFirst("Burger King"))
+        items.add(ItemModel("Burger King"))
         items.add(
-            ItemModelFirst(
+            ItemModel(
                 "MARGE",
                 "https://res.cloudinary.com/glovoapp/w_1200,f_auto,q_auto/Stores/om0jyg1y9rjhwwyutxv7"
             )
         )
         items.add(
-            ItemModelFirst(
+            ItemModel(
                 "Sushi24",
                 "https://res.cloudinary.com/glovoapp/w_1200,f_auto,q_auto/Stores/ltpnpmczr8tkksgzizws"
             )
         )
-        items.add(ItemModelFirst("Shemoikhede Genatsvale"))
+        items.add(ItemModel("Shemoikhede Genatsvale"))
         items.add(
-            ItemModelFirst(
+            ItemModel(
                 "Gochit's Burger",
                 "https://res.cloudinary.com/glovoapp/w_1200,f_auto,q_auto/Stores/rupi5mqrk1cjhvlk73fd"
             )
         )
         items.add(
-            ItemModelFirst(
+            ItemModel(
                 "Fifki",
                 "https://res.cloudinary.com/glovoapp/w_1200,f_auto,q_auto/Stores/vvvoef2wwjwtp5cldjq6"
             )
         )
         items.add(
-            ItemModelFirst(
+            ItemModel(
                 "LRG",
                 "https://res.cloudinary.com/glovoapp/w_1200,f_auto,q_auto/Stores/eq3q8f71gpy7l5vmcm5v"
             )
         )
         items.add(
-            ItemModelFirst(
+            ItemModel(
                 "SMASH by PIPES",
                 "https://res.cloudinary.com/glovoapp/w_1200,f_auto,q_auto/Stores/bynfqm1fooucbkfedfvj"
             )
         )
         items.add(
-            ItemModelFirst(
+            ItemModel(
                 "Sweets Corner",
                 "https://res.cloudinary.com/glovoapp/w_1200,f_auto,q_auto/Stores/lgzb2nlvkzbuz0k8rwdg"
             )
         )
-        items.add(ItemModelFirst("Area 51"))
-        items.add(ItemModelFirst("Receptor"))
+        items.add(ItemModel("Area 51"))
+        items.add(ItemModel("Receptor"))
 
 
     }

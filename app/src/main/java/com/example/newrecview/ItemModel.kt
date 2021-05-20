@@ -1,6 +1,6 @@
 package com.example.newrecview
 
-data class ItemModelSecond(
+data class ItemModel(
     val title: String,
-    val url: String
+    val url: String? = null
 )
